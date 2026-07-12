@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string text;
+    getline(cin, text);
+
+    int count = 0;
+
+    for(char c : text)
+        if(c == 'a' || c == 'A')
+            count++;
+
+    cout << count;
+    return 0;
+}
